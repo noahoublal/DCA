@@ -21,6 +21,13 @@
   <link rel="stylesheet" href="/site.css">
   <link rel="stylesheet" href="/site-motion.css">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Noah Oublal-Ruiz","jobTitle":"Développeur web indépendant","url":"https://digitalcommagency.fr/a-propos.html","worksFor":{"@type":"Organization","name":"DigitalCommAgency","url":"https://digitalcommagency.fr/"}}}</script>
+  <style>
+    .founder-intro{display:grid;grid-template-columns:minmax(0,1fr) minmax(230px,360px);align-items:center;gap:clamp(2rem,7vw,6rem)}
+    .founder-copy{min-width:0}
+    .founder-portrait{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:6px solid rgba(255,255,255,.78);background:#e9e4d8;box-shadow:0 18px 50px rgba(37,41,30,.12);margin:0}
+    .founder-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:54% 31%}
+    @media(max-width:760px){.founder-intro{grid-template-columns:1fr;gap:2rem}.founder-portrait{width:min(78vw,320px);justify-self:center;grid-row:1}.founder-copy{grid-row:2}}
+  </style>
   <link rel="icon" type="image/png" href="/assets/brand/dca-olive.png">
 </head>
 <body>
@@ -30,13 +37,13 @@
     <nav class="navlinks" aria-label="Navigation principale"><a href="/#services">Services</a><a href="/#methode">Notre méthode</a><a class="button" href="/#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a></nav>
   </div></header>
   <main id="contenu">
-    <section class="page-hero"><div class="wrap">
+    <section class="page-hero"><div class="wrap founder-intro"><div class="founder-copy">
       <div class="breadcrumb"><a href="/">Accueil</a> <span aria-hidden="true">/</span> à propos</div>
       <div class="eyebrow">Votre interlocuteur chez DigitalCommAgency</div>
       <h1>Un échange direct pour faire avancer votre projet web</h1>
       <p>Je suis Noah Oublal-Ruiz, développeur web indépendant et fondateur de DigitalCommAgency. J’accompagne les PME, artisans et indépendants dans la création, la refonte et l’évolution de leur site.</p>
       <div class="actions"><a class="button" href="/#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a><a class="button secondary" href="/#services">Découvrir les services</a></div>
-    </div></section>
+    </div><figure class="founder-portrait"><img src="/assets/noah-portrait.png" alt="Portrait de Noah Oublal-Ruiz, fondateur de DigitalCommAgency" width="716" height="1402" fetchpriority="high"></figure></div></section>
     <section class="content-section"><div class="wrap">
       <div class="tag">Une approche claire et adaptée</div>
       <h2>Un interlocuteur impliqué, du cadrage à la mise en ligne</h2>
